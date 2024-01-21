@@ -27,8 +27,8 @@ body{
 .角色头像{
     position: absolute;
     overflow: hidden;
-    width: 200px;
-    height: 200px;
+    width: 2vw;
+    height: 2vw;
     border-radius: 30%;
     display: flex;
     justify-content: center;
