@@ -40,11 +40,15 @@ body{
 .角色图片{
     position: absolute;
     overflow: hidden;
-    width: 100vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: crosshair;
     display: none;
     z-index: 1;
 }
