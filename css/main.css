@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    overflow: hidden;
+}
+body{
+    overflow: hidden;
+}
+.火{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    outline: 2px solid red;
+}
+.草{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    outline: 2px solid green;
+}
+.冰{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    outline: 2px solid rgb(9, 196, 237);
+}
+.雷{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    outline: 2px solid rgb(113, 12, 163);
+}
+.角色头像{
+    position: absolute;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: crosshair;
+    display: none;
+    z-index: 2;
+}
+.角色图片{
+    position: absolute;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 1;
+}
+.旋转1{
+    animation: 旋转1 2s infinite linear;
+}
+.旋转2{
+    animation: 旋转2 3s infinite linear;
+}
+.缩放{
+    animation: 缩放 2s infinite linear;
+}
+.移动1{
+    animation: 移动1 2s infinite linear;
+}
+.移动2{
+    animation: 移动2 3s infinite linear;
+}
+#粉球{
+    
+    position: absolute;
+    overflow: hidden;
+    top: 40%;
+    left: 40%;
+    height: 20vh;
+    width: 20vh;
+    z-index: 5;
+}
+#七七头像{
+    top: 45%;
+    left: 20%;
+}
+#可莉头像{
+    top: 70%;
+    left: 30%;
+}
+#神子头像{
+    top: 55%;
+    left: 70%;
+}
+#草神头像{
+    top: 30%;
+    left: 50%;
+}
+@keyframes 旋转1 {
+    0% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+}
+@keyframes 旋转2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+@keyframes 缩放 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes 移动1 {
+    0% {
+        transform: translate(0,0);
+    }
+    50% { 
+        transform: translate(90%,50%);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+@keyframes 移动2 {
+    0% {
+        transform: translate(0,0);
+    }
+    50% { 
+        transform: translate(160%,-40%);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+.bj{
+    display: block;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    user-select: none;
+    pointer-events: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    user-select: none;
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
+}
