@@ -1,0 +1,75 @@
+<!-- 
+    网页图标    https://gd-hbimg.huaban.com/3e946c95724e95c414034b8e837c2cd49e8d19c3e11d-pKf7HO_fw658webp
+    主页背景    https://webstatic.mihoyo.com/hk4e/upload/website/cn/videos/002.mp4
+    背景音乐    https://webfs.hw.kugou.com/202401211227/7562a76dfddab0de2109e7d40373fab5/KGTX/CLTX003/a061d68d9ce699089c76151a9a551414.mp3
+    
+    可莉头像    https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617033181769.png
+    可莉图片    https://uploadstatic.mihoyo.com/ys-obc/2023/01/16/12109492/69fb352f7c86836d42648a2bd9c61773_8899766719245799680.png
+    可莉语音1   https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/8797197/d43c16df225ae0716e301ce12ea4ab5b_1924377028594916575.mp3
+    可莉语音2   https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/8797197/9843c466371ffea246b68a6fcd1590c2_5808403279174752279.mp3
+    可莉语音3   https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/8797197/429281fded26a537aa7c33319fa6e388_172369884487879995.mp3
+    
+    草神头像    https://webstatic.mihoyo.com/upload/contentweb/2022/10/20/62cb7fb1815d9d05d3ece2e0d8e85c7d_8731082942818264376.png
+    草神图片    https://act-upload.mihoyo.com/ys-obc/2023/05/16/183046623/7bd8cbd84e026de8af13599573750f63_9093638409228219545.png
+    草神语音1   https://uploadstatic.mihoyo.com/ys-obc/2022/11/02/16576950/f5b6ddb7454cbb750e6c02d258c3e03d_8129408147390523371.mp3
+    草神语音2   https://uploadstatic.mihoyo.com/ys-obc/2022/11/02/16576950/d9f3e353f1b71d3c601cfa28f15e8ed5_1074679710559344807.mp3
+    草神语音3   https://uploadstatic.mihoyo.com/ys-obc/2022/11/02/16576950/803a65c8cb872ec0e0038ff35db35cc4_2447311778799308880.mp3
+
+    七七头像    https://uploadstatic.mihoyo.com/contentweb/20200828/2020082814265912018.png
+    七七图片    https://act-upload.mihoyo.com/ys-obc/2023/08/12/258999284/e94e3710ff2819e5f5fd6ddf51a90910_7928049319389729133.png
+    七七语音1   https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/9facb8a5cf7074ce9c4473047da0a0f7_8609196709052429954.mp3
+    七七语音2   https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/04832e97ed1bb5531a7cf105a4386960_2274820703150238158.mp3
+    七七语音3   https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/8263530d5a5737433a6a787407af0eca_7316059401485958901.mp3
+    
+    神子头像    https://uploadstatic.mihoyo.com/contentweb/20220208/2022020813481182336.png
+    神子图片    https://act-upload.mihoyo.com/ys-obc/2023/05/16/183046623/7e55525ee5cff216360b46322aa107ee_5470950562732053429.png
+    神子语音1   https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/3922fc02d6d72cf1299876a9444b3d2f_6782162175713051250.mp3
+    神子语音2   https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/815751988e85cb333f7aa1089d362227_1851810542210498668.mp3
+    神子语音3   https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/ae87a7aaafda9b0913bfd3c4d23c41b4_5464347271027513659.mp3   
+ -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>抽奖</title>
+    <link rel="icon" href="https://gd-hbimg.huaban.com/3e946c95724e95c414034b8e837c2cd49e8d19c3e11d-pKf7HO_fw658webp" sizes="16x16">
+</head>
+<body>
+    <video src="https://webstatic.mihoyo.com/hk4e/upload/website/cn/videos/002.mp4" muted="muted" autoplay="autoplay" loop="loop" playsinline="playsinline" webkit-playsinline="webkit-playsinline" x5-video-player-type="h5" x5-video-orientation="portraint" x5-playsinline="x5-playsinline" class="bj"></video>
+    <audio id="背景音乐" src="https://webfs.hw.kugou.com/202401211227/7562a76dfddab0de2109e7d40373fab5/KGTX/CLTX003/a061d68d9ce699089c76151a9a551414.mp3" loop volume="0.6"></audio>
+    <div>
+        <img id="粉球" class="旋转2" src="https://gd-hbimg.huaban.com/3e946c95724e95c414034b8e837c2cd49e8d19c3e11d-pKf7HO_fw658webp">
+    </div>
+    <div>
+        <img id="可莉头像" class="角色头像 火 移动1" src="https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617033181769.png">
+        <audio id="可莉语音1" src="https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/8797197/d43c16df225ae0716e301ce12ea4ab5b_1924377028594916575.mp3"></audio>
+        <audio id="可莉语音2" src="https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/8797197/9843c466371ffea246b68a6fcd1590c2_5808403279174752279.mp3"></audio>
+        <audio id="可莉语音3" src="https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/8797197/429281fded26a537aa7c33319fa6e388_172369884487879995.mp3"></audio>
+        <img id="可莉图片" class="角色图片" src="https://uploadstatic.mihoyo.com/ys-obc/2023/01/16/12109492/69fb352f7c86836d42648a2bd9c61773_8899766719245799680.png" alt="可莉图片">
+    </div>
+    <div>
+        <img id="草神头像" class="角色头像 草 移动2" src="https://webstatic.mihoyo.com/upload/contentweb/2022/10/20/62cb7fb1815d9d05d3ece2e0d8e85c7d_8731082942818264376.png">
+        <audio id="草神语音1" src="https://uploadstatic.mihoyo.com/ys-obc/2022/11/02/16576950/f5b6ddb7454cbb750e6c02d258c3e03d_8129408147390523371.mp3"></audio>
+        <audio id="草神语音2" src="https://uploadstatic.mihoyo.com/ys-obc/2022/11/02/16576950/d9f3e353f1b71d3c601cfa28f15e8ed5_1074679710559344807.mp3"></audio>
+        <audio id="草神语音3" src="https://uploadstatic.mihoyo.com/ys-obc/2022/11/02/16576950/803a65c8cb872ec0e0038ff35db35cc4_2447311778799308880.mp3"></audio>
+        <img id="草神图片" class="角色图片" src="https://act-upload.mihoyo.com/ys-obc/2023/05/16/183046623/7bd8cbd84e026de8af13599573750f63_9093638409228219545.png" alt="草神图片">
+    </div>
+    <div>
+        <img id="七七头像" class="角色头像 冰 旋转1" src="https://uploadstatic.mihoyo.com/contentweb/20200828/2020082814265912018.png">
+        <audio id="七七语音1" src="https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/9facb8a5cf7074ce9c4473047da0a0f7_8609196709052429954.mp3"></audio>
+        <audio id="七七语音2" src="https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/04832e97ed1bb5531a7cf105a4386960_2274820703150238158.mp3"></audio>
+        <audio id="七七语音3" src="https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/8263530d5a5737433a6a787407af0eca_7316059401485958901.mp3"></audio>
+        <img id="七七图片" class="角色图片" src="https://act-upload.mihoyo.com/ys-obc/2023/08/12/258999284/e94e3710ff2819e5f5fd6ddf51a90910_7928049319389729133.png" alt="七七图片">
+    </div>
+    <div>
+        <img id="神子头像" class="角色头像 雷 缩放" src="https://uploadstatic.mihoyo.com/contentweb/20220208/2022020813481182336.png">
+        <audio id="神子语音1" src="https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/3922fc02d6d72cf1299876a9444b3d2f_6782162175713051250.mp3"></audio>
+        <audio id="神子语音2" src="https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/815751988e85cb333f7aa1089d362227_1851810542210498668.mp3"></audio>
+        <audio id="神子语音3" src="https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/ae87a7aaafda9b0913bfd3c4d23c41b4_5464347271027513659.mp3"></audio>
+        <img id="神子图片" class="角色图片" src="https://act-upload.mihoyo.com/ys-obc/2023/05/16/183046623/7e55525ee5cff216360b46322aa107ee_5470950562732053429.png" alt="神子图片">
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
