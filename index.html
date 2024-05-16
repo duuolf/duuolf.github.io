@@ -1,51 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebUSB Example</title>
 </head>
 <body>
-    <button id="connect">Connect to ARC122U</button>
-    <p id="status"></p>
+    <h1>WebUSB Example</h1>
+    <button id="connectButton">Connect to USB Device</button>
+    <div id="status"></div>
 
     <script>
-        document.getElementById('connect').addEventListener('click', async () => {
+        document.getElementById('connectButton').addEventListener('click', async () => {
+            const statusDiv = document.getElementById('status');
             try {
-                // 请求用户选择并连接 ARC122U 设备
-                const device = await navigator.usb.requestDevice({
-                    filters: [{ vendorId: 1839, productId: 8704 }] // 根据 ARC122U 的具体 vendorId 和 productId 进行设置
-                });
-
-                console.log('Device selected:', device);
-
-                // 连接到设备
+                // 请求用户选择一个符合过滤器条件的 USB 设备
+                const device = await navigator.usb.requestDevice({ filters: [] });
+                // 打开 USB 设备
                 await device.open();
-                console.log('Device opened');
-
-                await device.selectConfiguration(1);
-                console.log('Configuration selected');
-
-                await device.claimInterface(0);
-                console.log('Interface claimed');
-
-                document.getElementById('status').textContent = 'Device connected';
-
-                // 向设备发送和接收数据的逻辑可以放在这里
-                // 例如，发送一个简单的命令
-                const command = new Uint8Array([0xFF, 0xCA, 0x00, 0x00, 0x04]);
-                const result = await device.transferOut(1, command);
-                console.log('Data sent:', result);
-
-                const response = await device.transferIn(1, 64);
-                console.log('Data received:', response);
-
-                const decoder = new TextDecoder();
-                const responseData = decoder.decode(response.data);
-                console.log('Decoded response:', responseData);
-                document.getElementById('status').textContent = 'Received: ' + responseData;
-
+                // 成功连接并打开设备
+                statusDiv.textContent = 'Device opened successfully: ' + device.productName;
+                console.log('Device opened successfully:', device);
             } catch (error) {
-                console.error('Error:', error);
-                document.getElementById('status').textContent = 'Error: ' + error;
+                // 处理错误
+                statusDiv.textContent = 'Error accessing USB device: ' + error.message;
+                console.error('Error accessing USB device:', error);
             }
         });
     </script>
